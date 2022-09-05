@@ -1,0 +1,25 @@
+%pitch軸の参照軌道
+
+%t = 0:0.1:5
+%fai = 0:0.03:1.5
+
+%pitch_trajectory = [t,fai];
+%disp("hairetu");
+%disp(pitch_trajectory);
+%{
+t_elev = (0:ts_elev:end_time);
+x3_ref = zeros(length(t_elev),2);
+disp("ts_elev");
+disp(t_elev);
+disp("x3_ref");
+disp(x3_ref);
+%}
+%t = 0:0.01:2;
+%s = sin(2*pi*t);
+%pitch_trajectory = [t,s];
+%pitch_trajectory = [1,100];
+sampleTime  = 0.01;
+numSteps = 1001;
+time = sampleTime*(0:numSteps-1);
+
+

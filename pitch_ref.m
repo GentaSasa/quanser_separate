@@ -1,6 +1,10 @@
 %pitch軸の参照軌道
 
-t = 0:0.1:5
-fai = 0:0.03:1.5
+sampleTime  = 0.01;
+numSteps = 1001;
+time = sampleTime*(0:numSteps-1);
+data = sin(2*pi/3*time);
 
-pitch_trajectory = [t fai];
+inputdata = timeseries(data,time);
+save("sin_wave","inputdata","-v7.3");
+
